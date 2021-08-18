@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
 }
-*{
+* {
   box-sizing: border-box;
 }
-img{
+img {
   display: block;
 }
 main {
@@ -120,7 +120,9 @@ input::placeholder,
 @media (min-width: 768px) {
   main {
     margin-top: var(--space-80);
-    min-height: calc(100vh - var(--space-80) - var(--space-70) - var(--space-72));
+    min-height: calc(
+      100vh - var(--space-80) - var(--space-70) - var(--space-72)
+    );
   }
 }
 
