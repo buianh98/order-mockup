@@ -1,0 +1,21 @@
+/*  background color */
+
+.tch--bg-orange-1 {
+  background: var(--radial-gradient-orange-1);
+}
+
+.tch--bg-orange-2 {
+  background: var(--radial-gradient-orange-6);
+}
+
+.tch--bg-orange-3 {
+  background: var(--orange-4);
+}
+
+.tch--bg-orange-4 {
+  background: var(--radial-gradient-orange-7);
+}
+
+.tch--bg-orange-5 {
+  background: var(--radial-gradient-orange-8);
+}

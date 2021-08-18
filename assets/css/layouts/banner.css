@@ -1,0 +1,101 @@
+.tch-banner {
+  width: 100%;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.tch-bg-banner {
+  background: var(--radial-gradient-orange-2);
+}
+
+.tch-banner__image {
+  max-height: 480px;
+  object-fit: cover;
+}
+
+.tch-carousel-indicators {
+  position: absolute;
+  right: var(--space-24);
+  bottom: 0;
+  z-index: 15;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.tch-carousel-indicators-wfh,
+.tch-carousel-indicators-combos {
+  position: absolute;
+  left: 50%;
+  bottom: var(--space-8);
+
+  transform: translateX(-50%);
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.tch-carousel-indicators li {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.tch-carousel-indicators-wfh li,
+.tch-carousel-indicators-combos li,
+.tch-carousel-indicators li {
+  box-sizing: content-box;
+  width: 16px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.15);
+  background-clip: padding-box;
+  transition: opacity 0.3s ease;
+}
+
+.tch-carousel-indicators-wfh li.active,
+.tch-carousel-indicators-combos li.active,
+.tch-carousel-indicators li.active {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+@media (min-width: 576px) {
+  .tch-carousel-indicators {
+    left: 0;
+    bottom: calc(-1 * var(--space-22));
+  }
+
+  .tch-carousel-indicators-wfh li,
+  .tch-carousel-indicators li,
+  .tch-carousel-indicators-combos li {
+    width: 36px;
+  }
+
+  .tch-carousel-indicators-wfh li,
+  .tch-carousel-indicators-combos li {
+    background: rgba(0, 0, 0, 0.07);
+  }
+
+  .tch-carousel-indicators li {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  .tch-carousel-indicators-wfh li.active,
+  .tch-carousel-indicators-combos li.active {
+    background: var(--orange-2);
+  }
+
+  .tch-carousel-indicators li.active {
+    background-color: var(--white);
+  }
+}
+
+@media (min-width: 992px) {
+  .tch-carousel-indicators-wfh,
+  .tch-carousel-indicators-combos {
+    bottom: calc(-1 * var(--space-8));
+  }
+}

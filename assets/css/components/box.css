@@ -1,0 +1,429 @@
+/* tch-box background color */
+.tch-box--bg-orange-1 {
+  background: var(--radial-gradient-orange-1);
+}
+
+.tch-box--bg-orange-2 {
+  background: var(--radial-gradient-orange-6);
+}
+
+.tch-box--bg-orange-3 {
+  background: var(--orange-4);
+}
+
+.tch-box--bg-orange-4 {
+  background: var(--radial-gradient-orange-7);
+}
+
+.tch-box--bg-orange-5 {
+  background: var(--radial-gradient-orange-8);
+}
+/* tch box bg image*/
+.tch-box__bg-image--wfh,
+.tch-box__bg-image--suggested {
+  position: absolute;
+  top: 0;
+  right: var(--space-16);
+}
+.tch-box__bg-image--wfh img,
+.tch-box__bg-image--suggested img {
+  width: var(--space-76);
+  height: var(--space-76);
+}
+
+.tch-box__bg-image--for-you {
+  top: 0;
+  right: 0;
+}
+
+.tch-box__bg-image--for-you img {
+  width: 176px;
+  height: 153px;
+}
+
+.tch-box__bg-image--wfh {
+  opacity: 0.2;
+}
+
+.tch-box__bg-image--form {
+  top: -10px;
+  left: 0;
+}
+
+.tch-box__bg-image--app {
+  top: 0;
+  right: 0;
+}
+
+.tch-box__bg-image--home {
+  right: 0;
+  bottom: 0;
+}
+.tch-box__bg-image--home img {
+  width: 70px;
+  height: 70px;
+}
+/* tch box*/
+
+.tch-box {
+  position: relative;
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-20);
+}
+
+.tch-box__header-spacing {
+  margin-bottom: var(--space-16);
+}
+
+.tch-box .tch-box__title .icon {
+  margin-right: var(--space-12);
+  color: #faa515;
+
+  font-size: var(--space-16);
+  line-height: 1;
+}
+
+.tch-box .tch-box__title .text {
+  color: var(--black-1);
+
+  font-size: var(--space-18);
+  line-height: var(--space-26);
+  font-weight: 600;
+}
+
+/* tch-box title color */
+.tch-box .tch-box__title .icon.white,
+.tch-box .tch-box__title .text.white {
+  color: var(--white);
+}
+
+/* tch-box--times*/
+
+.tch-box .tch-box__times {
+  color: var(--white);
+
+  font-size: var(--space-14);
+  line-height: var(--space-22);
+}
+
+.tch-box .tch-box__times .time-box {
+  font-weight: bold;
+  padding: var(--space-2) var(--space-4);
+  background: var(--radial-gradient-black);
+
+  border-radius: var(--space-4);
+}
+
+/* tch box store*/
+.tch-box--store-left,
+.tch-box--store-right {
+  width: 100%;
+}
+
+.tch-box--store-right {
+  flex: 1;
+
+  min-height: var(--space-150);
+  padding: var(--space-16) var(--space-15) var(--space-8);
+
+  background-color: var(--white-1);
+}
+
+.tch-box--store__title .text {
+  color: var(--black-1);
+  font-size: var(--space-18);
+  line-height: var(--space-36);
+  font-weight: 600;
+}
+
+.tch-box--store__title .icon {
+  font-size: var(--space-18);
+  line-height: 1;
+
+  color: var(--orange-2);
+}
+
+.tch-box--store__text.black {
+  color: var(--black);
+}
+
+.tch-box--store__text.orange {
+  color: var(--orange-2);
+}
+
+.tch-box--store-right .tch-custom-select,
+.tch-box--store__text {
+  font-size: var(--space-14);
+  line-height: var(--space-22);
+}
+
+.tch-box--store__text .icon {
+  font-size: var(--space-16);
+  line-height: 1;
+}
+
+.tch-box--store-right .tch-box--store__text {
+  line-height: var(--space-36);
+}
+
+.tch-box--store-right .tch-custom-select {
+  height: var(--space-48);
+  padding: var(--space-12) var(--space-16);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+
+.tch-box--store-right .tch-custom-select:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* tch-box--introduce*/
+
+.tch-box .tch-box--introduce-app__content {
+  padding-left: var(--space-12);
+}
+
+.tch-box .tch-box--introduce-app__content .tch-box--introduce-app__text {
+  color: var(--white);
+
+  font-size: var(--space-14);
+  line-height: var(--space-20);
+  font-weight: 600;
+}
+
+.tch-box .tch-box--introduce-app__border {
+  max-width: var(--space-342);
+  min-height: var(--space-52);
+  padding: var(--space-4);
+  border: 2px dashed #262626;
+  margin: auto;
+}
+
+.tch-box .tch-box--introduce-app__black-box {
+  width: 100%;
+  padding: var(--space-4) var(--space-14);
+  background: var(--radial-gradient-black-2);
+
+  color: var(--white);
+}
+
+.tch-box--introduce-app__black-box .box-left {
+  max-width: var(--space-156);
+}
+
+.tch-box--introduce-app__black-box .box-left p {
+  font-size: var(--space-12);
+  line-height: var(--space-18);
+}
+
+.tch-box--introduce-app__black-box .box-left h4 {
+  font-size: var(--space-18);
+  line-height: var(--space-18);
+  font-weight: 800;
+}
+
+.tch-box--introduce-app__black-box .box-right {
+  max-width: var(--space-114);
+}
+
+.tch-box--introduce-app__black-box .box-right p {
+  font-size: var(--space-12);
+  line-height: var(--space-16);
+}
+
+.tch-box .tch-box--introduce-app__icons {
+  padding: 0 var(--space-20) !important;
+  list-style: none;
+  padding: 0;
+}
+
+.tch-box .tch-box--introduce-app__icons li {
+  width: 3px;
+  height: 3px;
+
+  background: var(--white);
+  border-radius: 50%;
+
+  margin-bottom: var(--space-4);
+}
+
+.tch-box .tch-box--introduce-app__icons li:last-child {
+  margin-bottom: 0;
+}
+
+.tch-box__top-box {
+  position: absolute;
+  top: 0;
+
+  right: var(--space-10);
+
+  width: var(--space-60);
+  height: var(--space-32);
+
+  background-size: cover;
+}
+
+.tch-product__image__text {
+  color: var(--white);
+
+  font-weight: 600;
+  font-size: var(--space-16);
+  line-height: var(--space-26);
+}
+
+.tch-box--introduce-app__media {
+  position: relative;
+
+  width: 100%;
+  padding-top: 75%;
+}
+
+.tch-box--introduce-app__media__bg-image {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.tch-box--introduce-app__media__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+@media (max-width: 350px) {
+  .tch-box .tch-box__title .icon {
+    margin-right: var(--space-8);
+  }
+
+  .tch-box .tch-box--introduce-app__black-box {
+    padding: var(--space-4) var(--space-10);
+  }
+
+  .tch-box--introduce-app__black-box .box-left h4 {
+    font-size: var(--space-16);
+  }
+}
+
+@media (min-width: 768px) {
+  /* tch box bg image*/
+  .tch-box__bg-image--wfh,
+  .tch-box__bg-image--suggested {
+    top: var(--space-6);
+    right: 20px;
+  }
+  .tch-box__bg-image--wfh img,
+  .tch-box__bg-image--suggested img {
+    width: var(--space-150);
+    height: var(--space-150);
+  }
+
+  .tch-box__bg-image--for-you {
+    top: var(--space-10);
+    right: unset;
+    left: -140px;
+  }
+
+  .tch-box__bg-image--for-you img {
+    width: 389px;
+    height: 282px;
+  }
+  .tch-box__bg-image--form {
+    top: -10px;
+    left: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .tch-box.tch-box--introduce-app {
+    padding-top: var(--space-20);
+    padding-bottom: var(--space-10);
+  }
+}
+
+@media (min-width: 992px) {
+  .tch-box__bg-image--home img {
+    width: 370px;
+    height: 370px;
+  }
+  .tch-box__bg-image--app {
+    top: -80px;
+    left: -50px;
+  }
+
+  .tch-box__bg-image--form {
+    top: -30px;
+    left: 10px;
+  }
+  .tch-box__top-box {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .tch-box {
+    padding-top: var(--space-50);
+    padding-bottom: var(--space-50);
+  }
+
+  .tch-box__header-spacing {
+    margin-bottom: var(--space-30);
+  }
+
+  .tch-box .tch-box__title .icon {
+    font-size: var(--space-22);
+  }
+
+  .tch-box .tch-box__title .text {
+    font-size: var(--space-28);
+    line-height: var(--space-36);
+  }
+
+  .tch-box .tch-box--introduce-app__logo img {
+    width: var(--space-100);
+  }
+
+  .tch-box .tch-box--introduce-app__content {
+    padding-left: var(--space-16);
+  }
+
+  .tch-box .tch-box--introduce-app__content .tch-box--introduce-app__text {
+    font-size: var(--space-20);
+    line-height: 140%;
+  }
+
+  .tch-box--store-left,
+  .tch-box--store-right {
+    width: 50%;
+  }
+
+  .tch-box--store-right {
+    padding-top: var(--space-114);
+    padding-left: var(--space-80);
+    padding-right: var(--space-122);
+  }
+
+  .tch-box .tch-box--introduce-app__border {
+    margin: unset !important;
+    margin-left: auto !important;
+  }
+}
+@media (min-width: 1160px) {
+  .tch-box__bg-image--wfh,
+  .tch-box__bg-image--suggested {
+    right: -60px;
+  }
+}
+@media (min-width: 1250px) {
+  .tch-box__bg-image--wfh,
+  .tch-box__bg-image--suggested {
+    right: -10px;
+  }
+}
+@media (min-width: 1400px) {
+  .tch-box__bg-image--wfh,
+  .tch-box__bg-image--suggested {
+    right: -60px;
+  }
+}

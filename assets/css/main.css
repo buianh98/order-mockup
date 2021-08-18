@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-top: var(--space-50);
+  min-height: calc(100vh - var(--space-50) - var(--space-70) - var(--space-72));
+}
+
+input::placeholder,
+.text-limit-3-line,
+.text-limit-2-line,
+.text-limit-1-line {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+input::placeholder,
+.text-limit-1-line {
+  -webkit-line-clamp: 1;
+}
+
+.text-limit-2-line {
+  -webkit-line-clamp: 2;
+}
+
+.overflow-unset {
+  overflow: unset;
+}
+
+.text-limit-3-line {
+  -webkit-line-clamp: 3;
+}
+
+.tch-box-shadow-1 {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12) !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.f-600 {
+  font-weight: 600;
+}
+
+.text-orange {
+  color: var(--orange-2);
+}
+
+.bg-orange {
+  background-color: var(--radial-gradient-orange-9);
+}
+
+.mb--12 {
+  margin-bottom: var(--space-12);
+}
+
+@media (min-width: 1200px) {
+  .pr-xl--10 {
+    padding-right: var(--space-10);
+  }
+
+  .pl-xl--10 {
+    padding-left: var(--space-10);
+  }
+}
+
+@media (min-width: 992px) {
+  /* width */
+  .custom-scroll::-webkit-scrollbar {
+    height: var(--space-6);
+  }
+
+  /* Track */
+  .custom-scroll::-webkit-scrollbar-track {
+    cursor: pointer;
+    border-radius: var(--space-10);
+
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background: #888;
+
+    border-radius: var(--space-10);
+  }
+
+  /* Handle on hover */
+  .custom-scroll::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .mt-lg--30 {
+    margin-bottom: var(--space-30);
+  }
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.m--15 {
+  margin: -15px;
+}
+
+.ptl-20 {
+  padding: 0 var(--space-20);
+}
+@media (min-width: 768px) {
+  main {
+    margin-top: var(--space-80);
+    min-height: calc(100vh - var(--space-80) - var(--space-70) - var(--space-72));
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    margin-top: var(--space-80);
+    min-height: calc(100vh - var(--space-80) - var(--space-260));
+  }
+
+  .ml-lg--50 {
+    margin-left: calc(-1 * var(--space-50));
+  }
+}
+@media (min-width: 1052px) {
+  .container,
+  .container-lg {
+    max-width: 1020px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .container,
+  .container-lg {
+    max-width: 1230px;
+  }
+}

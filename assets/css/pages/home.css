@@ -1,0 +1,102 @@
+.tch-box.tch-box--suggested {
+  background-image: url(./../../images/svg/list-doc-bg.svg);
+  background: var(--radial-gradient-yellow);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.tch-box.tch-box--blog,
+.tch-box.tch-box--work-form-home {
+  background: var(--radial-gradient-orange-5);
+}
+
+/* .tch-box.tch-box--work-form-home {
+  padding-bottom: var(--space-8);
+} */
+
+.tch-box .tch-box--suggested__header {
+  margin-bottom: var(--space-18);
+}
+
+.tch-box .tch-box__title .text--suggested {
+  color: var(--black-2);
+}
+
+.tch-box .tch-box__title .text--suggested:last-child {
+  margin-left: var(--space-16);
+}
+
+.tch-box .tch-box__title .text--suggested.active {
+  position: relative;
+  color: var(--black-1);
+  transition: 0.3s;
+}
+
+.tch-box .tch-box__title .text--suggested.active::after {
+  position: absolute;
+  left: 0;
+  bottom: calc(-1 * var(--space-8));
+
+  width: 100%;
+  height: var(--space-2);
+
+  background-color: var(--orange-2);
+  content: "";
+}
+
+.tch-box.tch-box--flash-sale {
+  background: var(--radial-gradient-orange-3);
+}
+
+.tch-box .tch-box--flash-sale__header--spacing {
+  margin-bottom: var(--space-16);
+}
+
+@media (min-width: 768px) {
+  .tch-box.tch-box--suggested {
+    padding-bottom: var(--space-56);
+  }
+
+  .tch-box .tch-box--suggested__header {
+    margin-bottom: var(--space-44);
+  }
+
+  .tch-box .tch-box__title .text--suggested:last-child {
+    margin-left: var(--space-32);
+  }
+
+  .tch-box .tch-box__title .text--suggested.active::after {
+    height: var(--space-4);
+  }
+}
+
+@media (min-width: 992px) {
+  .tch-box.tch-box--suggested {
+    padding-top: var(--space-50);
+    padding-bottom: var(--space-72);
+  }
+
+  .tch-box.tch-box--blog {
+    padding-bottom: var(--space-26);
+  }
+
+  .tch-box.tch-box--flash-sale {
+    padding-bottom: var(--space-50);
+  }
+
+  .tch-box .tch-box--flash-sale__header--spacing {
+    margin-bottom: var(--space-32);
+  }
+
+  .tch-box .tch-box__title.tch-box__title--flash-sale {
+    margin-bottom: var(--space-12);
+    text-align: center;
+  }
+}
+
+@media (max-width: 350px) {
+  .tch-box .tch-box--suggested__header .icon {
+    margin-right: var(--space-4);
+  }
+}

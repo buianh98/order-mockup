@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="./../assets/css/third-party-css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./../assets/css/utilities/_variable.css" />
+
+    <link rel="stylesheet" href="./../assets/css/main.css" />
+    <link rel="stylesheet" href="./../assets/css/layouts/header.css" />
+    <link rel="stylesheet" href="./../assets/css/layouts/banner.css" />
+    <link rel="stylesheet" href="./../assets/css/layouts/footer.css" />
+
+    <link rel="stylesheet" href="./../assets/css/components/card.css" />
+    <link rel="stylesheet" href="./../assets/css/components/box.css" />
+    <link rel="stylesheet" href="./../assets/css/components/button.css" />
+    <link rel="stylesheet" href="./../assets/css/components/form.css" />
+    <link rel="stylesheet" href="./../assets/css/components/modals.css" />
+
+    <link rel="stylesheet" href="./../assets/css/pages/checkout.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="bg-header d-flex align-items-center">
+      <div class="container-fluid container-lg d-flex align-items-center">
+        <a href="javacript:void(0)" class="header-logo mr-4">
+          <img src="./../assets/images/logo.png" alt="" />
+        </a>
+        <div class="header-delivery header-delivery--bg d-none d-md-flex align-items-center">
+          <img src="./../assets/images/svg/Delivery 2.svg" alt="" class="icon-delivery" />
+          <div class="header-delivery_content pl-2">
+            <h5>Giao hàng</h5>
+            <p class="text-limit-1-line">Tại: 182 Lê Đại Hành, P.15,quận</p>
+          </div>
+          <img src="./../assets/images/svg/Vector.svg" alt="" class="icon-vertor" />
+        </div>
+        <nav class="navbar navbar-expand-lg d-none d-lg-inline">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-0" aria-current="page" href="javascript:void(0)">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-0" href="javascript:void(0)">Đặt hàng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-0" href="javascript:void(0)">Tin tức</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-0" href="javascript:void(0)">Cửa hàng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-0" href="javascript:void(0)">Khuyến mẫi</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-right d-flex align-items-center ml-auto">
+          <a href="javascript:void(0)" class="header-auth mr-2 mr-sm-2 d-flex align-items-lg-start">
+            <span class="mr-1 mr-sm-2 mt-1 d-block icon">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </span>
+            <span class="text">Đăng nhập</span>
+          </a>
+          <div class="icon-cart d-flex align-items-center justify-content-center">
+            <img src="./../assets/images/svg/icon-cart.svg" alt="" />
+            <div class="icon-quatity d-flex align-items-center justify-content-center">
+              <span>1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--  -->
+
+    <!-- main -->
+    <main>
+      <section class="tch-box tch-box--checkout">
+        <div class="container-lg container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+              <div class="tch-checkout-header">
+                <h1 class="text-center tch-checkout-title mb-0">
+                  <span class="icon mr-3"><i class="fa fa-file" aria-hidden="true"></i></span
+                  ><span class="text">Xác nhận đơn hàng</span>
+                </h1>
+              </div>
+              <div class="ml-lg--50 d-block">
+                <div
+                  class="
+                    tch-checkout-box tch-checkout-box--delivery
+                    tch-checkout-border
+                    float-lg-left
+                  "
+                >
+                  <div class="d-flex justify-content-between">
+                    <h4 class="tch-checkout-box__title">Giao tận nơi</h4>
+                    <p class="tch-checkout-box__btn-outline">Đổi phương thức</p>
+                  </div>
+                  <div
+                    class="
+                      d-flex
+                      flex-row
+                      align-items-start
+                      tch-delivery-card tch-delivery-card--border
+                    "
+                  >
+                    <div class="tch-delivery-card__image">
+                      <img src="./../assets/images/svg/Delivery 2.svg" alt="" />
+                    </div>
+
+                    <div
+                      class="
+                        d-flex
+                        justify-content-between
+                        align-items-start
+                        tch-delivery-card__content
+                      "
+                    >
+                      <div>
+                        <h5 class="tch-delivery-card__title mb-0">182 Lê Đại Hành</h5>
+                        <p class="tch-delivery-card__description mb-0">
+                          182 Lê Đại Hành, P. 15, Q. 11, TP. Hồ Chí Minh
+                        </p>
+                      </div>
+                      <span class="icon mt-2"
+                        ><i class="fa fa-chevron-right" aria-hidden="true"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-start tch-delivery-card">
+                    <div class="tch-delivery-card__image"></div>
+                    <div
+                      class="
+                        d-flex
+                        justify-content-between
+                        align-items-start
+                        tch-delivery-card__content
+                      "
+                    >
+                      <div>
+                        <h5 class="tch-delivery-card__title mb-0">Nhận hàng trong hôm nay</h5>
+                        <p class="tch-delivery-card__description mb-0">Càng sớm càng tốt</p>
+                      </div>
+                      <span class="icon mt-2"
+                        ><i class="fa fa-chevron-right" aria-hidden="true"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control tch-delivery__input"
+                      id="exampleInputEmail1"
+                      placeholder="Tên người nhận"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control tch-delivery__input"
+                      id="exampleInputEmail1"
+                      placeholder="Số điện thoại"
+                    />
+                  </div>
+                  <div class="form-group mb-0">
+                    <input
+                      type="email"
+                      class="form-control tch-delivery__input"
+                      id="exampleInputEmail1"
+                      placeholder="Thêm hướng dẫn giao hàng"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="
+                    d-none
+                    tch-checkout-box tch-checkout-box--lg-shadowbox
+                    d-lg-block
+                    float-lg-right
+                    pb-0
+                    pt-0
+                  "
+                >
+                  <div class="ptl-20">
+                    <div
+                      class="
+                        tch-checkout-box tch-checkout-box--list-ordered
+                        tch-checkout-border
+                        w-100
+                      "
+                    >
+                      <div class="d-flex justify-content-between">
+                        <h4 class="tch-checkout-box__title mb-0">Các món đã chọn</h4>
+                        <p class="tch-checkout-box__btn-outline">Thêm món</p>
+                      </div>
+
+                      <div
+                        class="
+                          tch-order-card tch-order-card--border
+                          d-flex
+                          align-items-center
+                          justify-content-between
+                        "
+                      >
+                        <div class="tch-order-card__left d-flex">
+                          <span class="tch-order-card__icon d-flex align-items-center">
+                            <i class="fa fa-pen" aria-hidden="true"></i>
+                          </span>
+                          <div class="tch-order-card__content">
+                            <h5 class="tch-order-card__title mb-0">1 x Cà Phê Sữa</h5>
+                            <p class="tch-order-card__description mb-0">
+                              Đá, Size S, 2 x Shot Espresso
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tch-order-card__right">
+                          <p class="tch-order-card__price mb-0">56,000đ</p>
+                        </div>
+                      </div>
+                      <div class="tch-order-card d-flex align-items-center justify-content-between">
+                        <div class="tch-order-card__left d-flex">
+                          <span class="tch-order-card__icon d-flex align-items-center">
+                            <i class="fa fa-pen" aria-hidden="true"></i>
+                          </span>
+                          <div class="tch-order-card__content">
+                            <h5 class="tch-order-card__title mb-0">1 x Bánh Mì Que</h5>
+                          </div>
+                        </div>
+                        <div class="tch-order-card__right">
+                          <p class="tch-order-card__price mb-0">8,000đ</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="
+                        tch-checkout-box tch-checkout-box--list-total
+                        tch-checkout-border
+                        w-100
+                      "
+                    >
+                      <div class="mb--12">
+                        <h4 class="tch-checkout-box__title">Tổng cộng</h4>
+                      </div>
+                      <div
+                        class="
+                          tch-order-card tch-order-card--border
+                          d-flex
+                          align-items-center
+                          justify-content-between
+                        "
+                        data-toggle="modal"
+                        data-target="#delivery-time"
+                      >
+                        <div class="tch-order-card__left d-flex">
+                          <p class="tch-order-card__text mb-0">Thành tiền</p>
+                        </div>
+                        <div class="tch-order-card__right">
+                          <p class="tch-order-card__price mb-0">64,000đ</p>
+                        </div>
+                      </div>
+                      <div
+                        class="
+                          tch-order-card
+                          d-flex
+                          align-items-center
+                          justify-content-between
+                          cursor-pointer
+                        "
+                        data-toggle="modal"
+                        data-target="#sale-modal"
+                      >
+                        <div class="tch-order-card__left d-flex">
+                          <p class="tch-order-card__text orange mb-0">Khuyến mãi</p>
+                        </div>
+                        <div class="tch-order-card__right">
+                          <span class="icon orange">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="
+                      tch-checkout-box tch-checkout-box--list-submited
+                      d-flex
+                      justify-content-between
+                      w-100
+                      position-static
+                    "
+                  >
+                    <div>
+                      <p class="tch-order-card__text text-white mb-0">Thành tiền</p>
+                      <p class="tch-order-card__text text-white f-600 mb-0">64,000đ</p>
+                    </div>
+                    <button
+                      class="btn btn--white text-orange btn--radius-100"
+                      data-toggle="modal"
+                      data-target="#detail-sale-modal"
+                      type="button"
+                    >
+                      Đặt hàng
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="
+                    tch-checkout-box tch-checkout-box--list-ordered
+                    tch-checkout-border
+                    d-lg-none
+                  "
+                >
+                  <div class="d-flex justify-content-between">
+                    <h4 class="tch-checkout-box__title mb-0">Các món đã chọn</h4>
+                    <p class="tch-checkout-box__btn-outline">Thêm món</p>
+                  </div>
+
+                  <div
+                    class="
+                      tch-order-card tch-order-card--border
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                    "
+                  >
+                    <div class="tch-order-card__left d-flex">
+                      <span class="tch-order-card__icon d-flex align-items-center">
+                        <i class="fa fa-pen" aria-hidden="true"></i>
+                      </span>
+                      <div class="tch-order-card__content">
+                        <h5 class="tch-order-card__title mb-0">1 x Cà Phê Sữa</h5>
+                        <p class="tch-order-card__description mb-0">
+                          Đá, Size S, 2 x Shot Espresso
+                        </p>
+                      </div>
+                    </div>
+                    <div class="tch-order-card__right">
+                      <p class="tch-order-card__price mb-0">56,000đ</p>
+                    </div>
+                  </div>
+                  <div class="tch-order-card d-flex align-items-center justify-content-between">
+                    <div class="tch-order-card__left d-flex">
+                      <span class="tch-order-card__icon d-flex align-items-center">
+                        <i class="fa fa-pen" aria-hidden="true"></i>
+                      </span>
+                      <div class="tch-order-card__content">
+                        <h5 class="tch-order-card__title mb-0">1 x Bánh Mì Que</h5>
+                      </div>
+                    </div>
+                    <div class="tch-order-card__right">
+                      <p class="tch-order-card__price mb-0">8,000đ</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="
+                    tch-checkout-box tch-checkout-box--list-total
+                    tch-checkout-border
+                    d-lg-none
+                  "
+                >
+                  <div class="mb--12">
+                    <h4 class="tch-checkout-box__title">Tổng cộng</h4>
+                  </div>
+                  <div class="mt-lg--30">
+                    <div
+                      class="
+                        tch-order-card tch-order-card--border
+                        d-flex
+                        align-items-center
+                        justify-content-between
+                      "
+                      data-toggle="modal"
+                      data-target="#delivery-time"
+                    >
+                      <div class="tch-order-card__left d-flex">
+                        <p class="tch-order-card__text mb-0">Thành tiền</p>
+                      </div>
+                      <div class="tch-order-card__right">
+                        <p class="tch-order-card__price mb-0">64,000đ</p>
+                      </div>
+                    </div>
+                    <div
+                      class="
+                        tch-order-card
+                        d-flex
+                        align-items-center
+                        justify-content-between
+                        cursor-pointer
+                      "
+                      data-toggle="modal"
+                      data-target="#sale-modal"
+                    >
+                      <div class="tch-order-card__left d-flex">
+                        <p class="tch-order-card__text orange mb-0">Khuyến mãi</p>
+                      </div>
+                      <div class="tch-order-card__right">
+                        <span class="icon orange">
+                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="
+                    tch-checkout-box tch-checkout-box--list-submited
+                    d-flex
+                    justify-content-between
+                    d-lg-none
+                  "
+                >
+                  <div>
+                    <p class="tch-order-card__text text-white mb-0">Thành tiền</p>
+                    <p class="tch-order-card__text text-white f-600 mb-0">64,000đ</p>
+                  </div>
+                  <button
+                    class="btn btn--white text-orange btn--radius-100"
+                    data-toggle="modal"
+                    data-target="#detail-sale-modal"
+                    type="button"
+                  >
+                    Đặt hàng
+                  </button>
+                </div>
+
+                <div
+                  class="
+                    tch-checkout-box tch-checkout-box--list-method
+                    tch-checkout-border
+                    float-lg-left
+                  "
+                >
+                  <div class="mb--12">
+                    <h4 class="tch-checkout-box__title mb-0 mb-0">Phương thức thanh toán</h4>
+                  </div>
+                  <ul class="tch-list-payment-method mb-0">
+                    <li class="tch-payment-method-item">
+                      <div class="custom-control custom-radio mb-0">
+                        <input
+                          class="custom-control-input"
+                          type="radio"
+                          name="payment-method"
+                          id="payment-method-1"
+                        />
+                        <label class="custom-control-label tch-custom-radio" for="payment-method-1">
+                          <span class="icon ml-3 mr-2">
+                            <img src="./../assets/images/svg/money.svg" alt="" /> </span
+                          ><span class="text">Tiền mặt khi nhận hàng</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="tch-payment-method-item">
+                      <div class="custom-control custom-radio mb-0">
+                        <input
+                          class="custom-control-input"
+                          type="radio"
+                          name="payment-method"
+                          id="payment-method-2"
+                        />
+                        <label class="custom-control-label tch-custom-radio" for="payment-method-2">
+                          <span class="icon ml-3 mr-2">
+                            <img src="./../assets/images/svg/momo.svg" alt="" /> </span
+                          ><span class="text">MoMo</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="tch-payment-method-item">
+                      <div class="custom-control custom-radio mb-0">
+                        <input
+                          class="custom-control-input"
+                          type="radio"
+                          name="payment-method"
+                          id="payment-method-3"
+                        />
+                        <label class="custom-control-label tch-custom-radio" for="payment-method-3">
+                          <span class="icon ml-3 mr-2">
+                            <img src="./../assets/images/svg/zalo.svg" alt="" /> </span
+                          ><span class="text">ZaloPay</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="tch-payment-method-item">
+                      <div class="custom-control custom-radio mb-0">
+                        <input
+                          class="custom-control-input"
+                          type="radio"
+                          name="payment-method"
+                          id="payment-method-4"
+                        />
+                        <label class="custom-control-label tch-custom-radio" for="payment-method-4">
+                          <span class="icon ml-3 mr-2">
+                            <img src="./../assets/images/svg/shoppe.svg" alt="" /> </span
+                          ><span class="text">ShopeePay</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="tch-payment-method-item">
+                      <div class="custom-control custom-radio mb-0">
+                        <input
+                          class="custom-control-input"
+                          type="radio"
+                          name="payment-method"
+                          id="payment-method-5"
+                        />
+                        <label class="custom-control-label tch-custom-radio" for="payment-method-5">
+                          <span class="icon ml-3 mr-2">
+                            <img src="./../assets/images/svg/bank-card.svg" alt="" /> </span
+                          ><span class="text">Thẻ ngân hàng</span>
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tch-checkout-box tch-checkout-box--remove-card float-lg-right">
+                  <p class="tch-checkout-box__text text-center mb-0">
+                    <span class="icon mr-2"><i class="fa fa-trash" aria-hidden="true"></i></span
+                    ><span>Xóa đơn hàng</span>
+                  </p>
+                </div>
+                <div class="d-none d-lg-block clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--  -->
+
+    <!-- footer -->
+    <footer>
+      <div class="d-block d-lg-none tch-footer__mobile-header tch-box--bg-orange-5">
+        <div class="container-fluid">
+          <div class="d-flex justify-content-between">
+            <div class="tch-footer__mobile__contact">
+              <p class="mb-0">Đặt hàng (7:00-21:00)</p>
+              <h5>
+                <span class="icon mr-1"><i class="fa fa-phone-square" aria-hidden="true"></i></span
+                ><span class="text">028.71.087.088</span>
+              </h5>
+            </div>
+            <div class="tch-footer__mobile__contact">
+              <p class="mb-0">Đặt hàng (7:00-21:00)</p>
+              <h5>
+                <span class="icon mr-1"><i class="fa fa-phone-square" aria-hidden="true"></i></span
+                ><span class="text">028.71.087.088</span>
+              </h5>
+            </div>
+            <p
+              class="tch-footer__mobile__text text-center mb-0"
+              data-toggle="collapse"
+              data-target="#footer-collapse"
+              aria-expanded="false"
+              aria-controls="footer-collapse"
+            >
+              <span class="text d-block">Xem thêm </span>
+              <span class="text d-block">thông tin</span>
+              <span class="icon d-block mt-1"
+                ><i class="fa fa-chevron-down" aria-hidden="true"></i
+              ></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="collapse show" id="footer-collapse">
+        <div class="tch-footer__top-content">
+          <div class="container-lg container-fluid">
+            <div class="row">
+              <div class="col-4 col-sm-3 col-lg-2">
+                <div class="tch-footer__top__logo">
+                  <img src="./../assets/images/logo-footer.png" alt="" />
+                </div>
+              </div>
+              <div class="col-8 col-sm-9 col-lg-10">
+                <ul class="tch-footer__top__navbar-list mb-0 row">
+                  <li class="col-12 col-md-6 col-lg-3">
+                    <div class="tch-footer__navbar-item">
+                      <div
+                        class="tch-footer__navbar-item-header"
+                        data-toggle="collapse"
+                        href="#tch-footer__navbar-1"
+                        aria-expanded="false"
+                        aria-controls="tch-footer__navbar-1"
+                        type="button"
+                      >
+                        <span class="icon mr-1"
+                          ><i class="fa fa-plus" aria-hidden="true"></i
+                          ><i class="fa fa-minus" aria-hidden="true"></i
+                        ></span>
+                        <span class="text">Thông tin công ty</span>
+                      </div>
+                      <ul class="collapse tch-footer__navbar-item-body" id="tch-footer__navbar-1">
+                        <li><a href="javascript:void(0)">Về Chúng Tôi</a></li>
+                        <li><a href="javascript:void(0)">Hạt Cà Phê The Coffee House</a></li>
+                        <li><a href="javascript:void(0)">Blog</a></li>
+                        <li><a href="javascript:void(0)">Cơ Hội Nghề Nghiệp</a></li>
+                        <li><a href="javascript:void(0)">Cửa hàng</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-12 col-md-6 col-lg-3">
+                    <div class="tch-footer__navbar-item">
+                      <div
+                        class="tch-footer__navbar-item-header"
+                        data-toggle="collapse"
+                        href="#tch-footer__navbar-2"
+                        aria-expanded="false"
+                        aria-controls="tch-footer__navbar-2"
+                      >
+                        <span class="icon mr-1"
+                          ><i class="fa fa-plus" aria-hidden="true"></i
+                          ><i class="fa fa-minus" aria-hidden="true"></i
+                        ></span>
+                        <span class="text">Đặt hàng và giao nhận</span>
+                      </div>
+                      <ul class="collapse tch-footer__navbar-item-body" id="tch-footer__navbar-2">
+                        <li><a href="javascript:void(0)">Shipping methods</a></li>
+                        <li><a href="javascript:void(0)">Payment</a></li>
+                        <li><a href="javascript:void(0)">Cash voucher</a></li>
+                        <li><a href="javascript:void(0)">Return</a></li>
+                        <li><a href="javascript:void(0)">Exchange</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-12 col-md-6 col-lg-3">
+                    <div class="tch-footer__navbar-item">
+                      <div
+                        class="tch-footer__navbar-item-header"
+                        data-toggle="collapse"
+                        href="#tch-footer__navbar-3"
+                        aria-expanded="false"
+                        aria-controls="tch-footer__navbar-3"
+                      >
+                        <span class="icon mr-1"
+                          ><i class="fa fa-plus" aria-hidden="true"></i
+                          ><i class="fa fa-minus" aria-hidden="true"></i
+                        ></span>
+                        <span class="text">Điều khoản sử dụng</span>
+                      </div>
+                      <ul class="collapse tch-footer__navbar-item-body" id="tch-footer__navbar-3">
+                        <li><a href="javascript:void(0)">Quy chế website</a></li>
+                        <li><a href="javascript:void(0)">Bảo mật thông tin</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-12 col-md-6 col-lg-3">
+                    <div class="tch-footer__navbar-item">
+                      <div
+                        class="tch-footer__navbar-item-header"
+                        data-toggle="collapse"
+                        href="#tch-footer__navbar-4"
+                        aria-expanded="false"
+                        aria-controls="tch-footer__navbar-4"
+                      >
+                        <span class="icon mr-1"
+                          ><i class="fa fa-plus" aria-hidden="true"></i
+                          ><i class="fa fa-minus" aria-hidden="true"></i
+                        ></span>
+                        <span class="text">Liên hệ</span>
+                      </div>
+
+                      <ul class="collapse tch-footer__navbar-item-body" id="tch-footer__navbar-4">
+                        <li>
+                          <a href="javascript:void(0)"
+                            >Head Office 1: 86 - 88 Cao Thang, Ward 4, District 3, Ho Chi Minh,
+                            Vietnam. Head Office 2: Floor 3 & 4 The Hub Building - 195/10E Dien Bien
+                            Phu, Ward 15, Binh Thanh District, Ho Chi Minh, Vietnam. +842871 078 079
+                            hi@thecoffeehouse.vn</a
+                          >
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">
+                            Head Office 2: Floor 3 & 4 The Hub Building - 195/10E Dien Bien Phu,
+                            Ward 15, Binh Thanh District, Ho Chi Minh, Vietnam.
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)"> +842871 078 079 </a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)"> hi@thecoffeehouse.vn </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tch-footer__bottom-content">
+          <div class="container-lg container-fluid">
+            <div class="row align-items-center">
+              <div class="col-7 col-lg-4">
+                <p class="tch-footer__bottom__text mb-0">
+                  Copyright © 2021 The Coffee House. All rights reserved.
+                </p>
+              </div>
+              <div class="col-lg-6 d-none d-lg-block">
+                <ul
+                  class="
+                    d-flex
+                    align-items-center
+                    justify-content-end
+                    tch-footer__bottom__navbar
+                    mb-0
+                  "
+                >
+                  <li class="ml-4">
+                    <a href="javascript:void(0)">Trang chủ</a>
+                  </li>
+                  <li class="ml-4">
+                    <a href="javascript:void(0)">Sản phẩm</a>
+                  </li>
+                  <li class="ml-4">
+                    <a href="javascript:void(0)">Cửa hàng</a>
+                  </li>
+                  <li class="ml-4">
+                    <a href="javascript:void(0)">Cá nhân</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-5 col-lg-2">
+                <div class="tch-footer__bottom-logo ml-auto">
+                  <img src="./../assets/images/active.png" alt="" class="ml-auto" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--  -->
+
+    <!-- sale-modal -->
+    <div
+      class="modal fade p-0"
+      id="sale-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="sale-modal-title"
+      aria-hidden="false"
+    >
+      <div
+        class="
+          modal-dialog
+          tch-modal-dialog--custom-2 tch-modal-dialog--custom-header tch-modal-dialog--spacing-100
+        "
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="icon" data-dismiss="modal">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+
+            <h5 class="modal-title" id="sale-modal-title">Khuyến mãi</h5>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control form-control--custom tch-delivery__input"
+                placeholder="Nhập mã khuyến mãi"
+                aria-label=""
+                aria-describedby="basic-addon1"
+              />
+              <div class="input-group-prepend">
+                <button class="btn btn--smoky-gray btn--radius-right-4" type="button">
+                  <span class="text">Áp dụng</span>
+                </button>
+              </div>
+            </div>
+            <div class="tch-modal-sale-header">
+              <h6 class="tch-modal-sale-title mb-0">KHUYẾN MÃI BẠN CÓ THỂ SỬ DỤNG</h6>
+            </div>
+            <div class="tch-modal-sale-body">
+              <div class="tch-sale-card d-flex mb-2">
+                <div class="tch-sale-card-image">
+                  <img src="./../assets/images/sale30 .png" alt="" />
+                </div>
+                <div class="tch-sale-card-content d-flex flex-column justify-content-between">
+                  <p class="text-description mb-0">Ưu đãi 30%</p>
+                  <p class="text-expired-time mb-0">Hết hạn 31/07/2021</p>
+                </div>
+              </div>
+              <div class="tch-sale-card d-flex">
+                <div class="tch-sale-card-image">
+                  <img src="./../assets/images/buy1get1free.png" alt="" />
+                </div>
+                <div class="tch-sale-card-content d-flex flex-column justify-content-between">
+                  <p class="text-description mb-0">Mua 1 Trà sữa tặng 1 Trà sữa/ Mochi</p>
+                  <p class="text-expired-time mb-0">Hết hạn 31/07/2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- detail-sale-modal -->
+    <div
+      class="modal fade p-0"
+      id="detail-sale-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="detail-sale-modal-title"
+      aria-hidden="false"
+    >
+      <div
+        class="
+          modal-dialog
+          tch-modal-dialog--custom-2 tch-modal-dialog--custom-header tch-modal-dialog--spacing-100
+        "
+        role="document"
+      >
+        <div class="modal-content modal-content--detail-sale">
+          <div class="modal-header">
+            <span class="icon" data-dismiss="modal">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+
+            <h5 class="modal-title" id="detail-sale-modal-title">Chi tiết khuyến mãi</h5>
+          </div>
+          <div class="modal-body d-flex flex-column justify-content-between">
+            <div class="tch-detail-sale-box d-flex flex-column align-items-center">
+              <h4 class="tch-detail-sale-box-title mb-1">Ưu đãi 30%</h4>
+              <p class="tch-text-expired-time">Hết hạn 31/07/2021</p>
+              <img src="./../assets/images/QR-code.png" alt="" class="tch-detail-sale-box-image" />
+              <p class="tch-text-user-info mb-0">
+                <span class="text mr-1">CHIONGNAU</span>
+                <span class="icon"><i class="fa fa-clone" aria-hidden="true"></i></span>
+              </p>
+            </div>
+            <button class="btn btn--orange btn--orange--detail-sale btn--radius-100 f-600 w-100">
+              <span class="text">Sử dụng ngay</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- delivery-time modal -->
+    <div
+      class="modal fade p-0"
+      id="delivery-time"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="delivery-time-title"
+      aria-hidden="false"
+    >
+      <div
+        class="
+          modal-dialog
+          tch-modal-dialog--custom-2 tch-modal-dialog--custom-header tch-modal-dialog--spacing-100
+        "
+        role="document"
+      >
+        <div class="modal-content modal-content--detail-sale">
+          <div class="modal-header">
+            <span class="icon" data-dismiss="modal">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+
+            <h5 class="modal-title" id="delivery-time-title">Thời gian nhận hàng</h5>
+          </div>
+          <div class="modal-body d-flex flex-column justify-content-lg-between">
+            <div class="form-group">
+              <select class="form-control tch-delivery__input">
+                <option>Hôm nay</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <select class="form-control tch-delivery__input">
+                <option>Càng sớm càng tốt</option>
+              </select>
+            </div>
+            <button class="btn btn--orange btn--orange--detail-sale btn--radius-100 f-600 w-100">
+              <span class="text">Sử dụng ngay</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -->
+
+    <!-- navigation footer -->
+    <div class="d-flex d-lg-none tch-footer-navbar w-100 pl-3 pr-3">
+      <ul
+        class="tch-footer-navbar-list d-flex align-items-center justify-content-between w-100 mb-0"
+      >
+        <li>
+          <a
+            href="javascript:void(0)"
+            class="
+              tch-footer-navbar-item
+              active
+              d-flex
+              justify-content-center
+              align-items-center
+              flex-column
+            "
+          >
+            <span class="icon"> <i class="fa fa-home" aria-hidden="true"></i></span>
+            <h5 class="text mb-0">Trang chủ</h5>
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0)"
+            class="
+              tch-footer-navbar-item
+              d-flex
+              justify-content-center
+              align-items-center
+              flex-column
+            "
+          >
+            <span class="icon"> <i class="fa fa-coffee" aria-hidden="true"></i></span>
+            <h5 class="text mb-0">Đặt hàng</h5>
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0)"
+            class="
+              tch-footer-navbar-item
+              d-flex
+              justify-content-center
+              align-items-center
+              flex-column
+            "
+          >
+            <span class="icon"> <i class="fa fa-home" aria-hidden="true"></i></span>
+            <h5 class="text mb-0">Cửa hàng</h5>
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0)"
+            class="
+              tch-footer-navbar-item
+              d-flex
+              justify-content-center
+              align-items-center
+              flex-column
+            "
+          >
+            <span class="icon"> <i class="fa fa-bookmark" aria-hidden="true"></i></span>
+            <h5 class="text mb-0">Khuyến mãi</h5>
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0)"
+            class="
+              tch-footer-navbar-item
+              d-flex
+              justify-content-center
+              align-items-center
+              flex-column
+            "
+          >
+            <span class="icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            <h5 class="text mb-0">Khác</h5>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--  -->
+    <script src="./../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./../assets/js/bootstrap.min.js"></script>
+    <script src="./../assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
