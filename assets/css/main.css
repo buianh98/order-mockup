@@ -12,6 +12,9 @@ main {
   min-height: calc(100vh - var(--space-50) - var(--space-70) - var(--space-72));
 }
 
+button {
+  outline: 0;
+}
 input::placeholder,
 .text-limit-3-line,
 .text-limit-2-line,
