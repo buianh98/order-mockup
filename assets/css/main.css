@@ -1,9 +1,15 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+button {
+  outline: 0;
+}
 main {
   margin-top: var(--space-50);
   min-height: calc(100vh - var(--space-50) - var(--space-70) - var(--space-72));
